@@ -1,0 +1,330 @@
+@media (max-width: 1200px) {
+  .footer-fixed {
+    padding-bottom: 30px;
+  }
+  .fullpage-container .header .header-content {
+    padding: 80px 0 30px;
+  }
+  .fullpage-container .history-container .history-content {
+    padding: 50px 0;
+  }
+  .fullpage-container .history-container .history-content .download {
+    padding: 20px;
+  }
+  .fullpage-container .history-container .history-content .download .download-buttons button {
+    width: 160px;
+  }
+  .fullpage-container .history-container .history-content .download .download-buttons button:first-child {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .fullpage-container .conditions-container .conditions-content {
+    margin: 50px 0 30px;
+    padding-top: 50px;
+  }
+  .fullpage-container .conditions-container .conditions-content .conditions-content-left {
+    width: 40%;
+    margin-right: 30px;
+  }
+  .fullpage-container .conditions-container .conditions-content .conditions-content-right {
+    width: 48%;
+    padding-bottom: 70px;
+  }
+  .fullpage-container .conditions-container .conditions-content .conditions-content-right .conditions-bottom {
+    width: 70%;
+  }
+  .fullpage-container .bonus-container .bonus-content .bonus-card {
+    margin-bottom: 0px;
+  }
+  .fullpage-container .faq-container .faq-content {
+    padding: 50px 0 30px 0;
+  }
+  .fullpage-container .faq-container .faq-content .faq-left-aside button {
+    padding: 15px 70px;
+  }
+  .fullpage-container .reviews-container .reviews-content {
+    padding: 50px 0;
+  }
+  .fullpage-container .reviews-container .reviews-content .reviews-left-aside h3 {
+    font-size: 2rem;
+  }
+  .fullpage-container .reviews-container .reviews-content .reviews-right-aside {
+    width: 60%;
+  }
+  .fullpage-container .footer-container .footer-content {
+    padding-top: 50px;
+  }
+  .fullpage-container .footer-container .footer-content .footer-map {
+    margin-right: 50px;
+  }
+  .fullpage-container .footer-container .footer-content .footer-contacts {
+    width: 40%;
+  }
+}
+@media (max-width: 900px) {
+  .flex-wrap {
+    padding: 0 30px;
+  }
+  .menu-container {
+    display: block;
+  }
+  .open-menu .open-ham .mobile {
+    display: block;
+  }
+  .fixed-menu .menu li {
+    display: none;
+  }
+  .fixed-menu .menu li.mobile {
+    display: block;
+  }
+  .fixed-menu.dark .menu li {
+    display: none;
+  }
+  .fixed-menu.dark .menu li.mobile {
+    display: block;
+  }
+  .fullpage-container .header {
+    padding: 0;
+  }
+  .fullpage-container .header .header-content .header-text {
+    width: 100%;
+  }
+  .fullpage-container .header .header-content .header-text p {
+    font-size: 2rem;
+  }
+  .fullpage-container .history-container .history-content {
+    display: block;
+  }
+  .fullpage-container .history-container .history-content:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+  .fullpage-container .history-container .history-content .history-image {
+    width: 25%;
+    float: left;
+  }
+  .fullpage-container .history-container .history-content .download {
+    margin: 0;
+    border: none;
+  }
+  .fullpage-container .history-container .history-content .download .download-buttons button:first-child {
+    margin-right: 20px;
+  }
+  .fullpage-container .conditions-container .conditions-content {
+    display: block;
+  }
+  .fullpage-container .conditions-container .conditions-content .conditions-content-left {
+    width: 100%;
+  }
+  .fullpage-container .conditions-container .conditions-content .conditions-content-left ul {
+    padding-bottom: 30px;
+  }
+  .fullpage-container .conditions-container .conditions-content .conditions-content-right {
+    width: 100%;
+  }
+  .fullpage-container .autos-container .autos-gallery .auto-card img {
+    width: 260px;
+    height: 180px;
+  }
+  .fullpage-container .bonus-container .bonus-content .bonus-card {
+    margin-bottom: 0px;
+    padding: 20px 10px;
+  }
+  .fullpage-container .faq-container .faq-content {
+    display: block;
+  }
+  .fullpage-container .faq-container .faq-content .faq-left-aside {
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 20px;
+  }
+  .fullpage-container .faq-container .faq-content .faq-right-aside {
+    width: 80%;
+  }
+  .fullpage-container .reviews-container .reviews-content {
+    display: block;
+    padding-top: 20px;
+  }
+  .fullpage-container .reviews-container .reviews-content .reviews-left-aside {
+    width: 100%;
+    text-align: center;
+  }
+  .fullpage-container .reviews-container .reviews-content .reviews-left-aside h3 {
+    text-align: center;
+  }
+  .fullpage-container .reviews-container .reviews-content .reviews-left-aside button {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  .fullpage-container .reviews-container .reviews-content .reviews-right-aside {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .fullpage-container .footer-container .footer-content {
+    display: block;
+  }
+  .fullpage-container .footer-container .footer-content .footer-map {
+    display: block;
+    width: 100%;
+  }
+  .fullpage-container .footer-container .footer-content .footer-contacts {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+  }
+  .fullpage-container .footer-container .footer-content .footer-form {
+    width: 90%;
+  }
+  .fullpage-container .footer-container .footer-content .footer-form form p {
+    padding-top: 0;
+  }
+  .fullpage-container .footer-container .footer-content .footer-form form button {
+    display: block;
+    padding: 10px 35px;
+  }
+}
+@media (max-width: 600px) {
+  .menu-container .mobile-nav {
+    width: 70%;
+  }
+  .footer-fixed {
+    margin-bottom: 0;
+    padding: 20px 0;
+    justify-content: center;
+  }
+  .footer-fixed .language {
+    display: none;
+  }
+  .footer-fixed .social-icons span {
+    font-size: 1rem;
+  }
+  .modal-container .modal-content {
+    width: 290px;
+  }
+  .modal-container .modal-content.modal-callback .callback-title h4 {
+    font-size: 1rem;
+  }
+  .modal-container .modal-content.modal-callback .callback-text {
+    padding: 0;
+  }
+  .modal-container .modal-content.modal-callback .callback-text p {
+    font-size: 1rem;
+  }
+  .modal-container .modal-content.modal-callback .callback-text input {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .modal-container .modal-content.modal-callback .callback-footer button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+  .modal-container .modal-content.modal-review .review-title {
+    padding: 15px 0;
+  }
+  .modal-container .modal-content.modal-review .review-title h4 {
+    font-size: 1rem;
+  }
+  .modal-container .modal-content.modal-review .review-footer button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+  .fullpage-container .header .header-cities {
+    width: 250px;
+    text-align: center;
+  }
+  .fullpage-container .header .header-cities span {
+    padding: 0 6px;
+  }
+  .fullpage-container .header .header-button button {
+    padding: 15px 25px;
+  }
+  .fullpage-container .history-container .history-content {
+    padding: 30px 0;
+  }
+  .fullpage-container .history-container .history-content .history-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .fullpage-container .history-container .history-content .history-image .history-logo {
+    width: 100%;
+    text-align: center;
+  }
+  .fullpage-container .history-container .history-content .download {
+    width: 100%;
+    padding: 0;
+  }
+  .fullpage-container .history-container .history-content .download .download-buttons button {
+    width: 45%;
+    padding: 10px 0;
+  }
+  .fullpage-container .history-container .history-content .download .download-buttons button:first-child {
+    margin-right: 5px;
+  }
+  .fullpage-container .conditions-container {
+    padding-top: 50px;
+  }
+  .fullpage-container .conditions-container .conditions-content {
+    padding: 15px;
+    margin: 0;
+  }
+  .fullpage-container .conditions-container .conditions-content .conditions-content-left h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .fullpage-container .conditions-container .conditions-content .conditions-content-left ul {
+    padding-bottom: 0;
+  }
+  .fullpage-container .conditions-container .conditions-content .conditions-content-right h2 {
+    display: none;
+  }
+  .fullpage-container .conditions-container .conditions-content .conditions-content-right .conditions-bottom {
+    width: 100%;
+    text-align: center;
+    padding: 6px 2px;
+  }
+  .fullpage-container .bonus-container .bonus-content {
+    padding: 20px 0 0 0;
+  }
+  .fullpage-container .bonus-container .bonus-content .bonus-card {
+    padding: 10px;
+  }
+  .fullpage-container .autos-container .autos-gallery .auto-card img {
+    width: 260px;
+    height: 180px;
+  }
+  .fullpage-container .faq-container .faq-content .faq-left-aside h3 {
+    font-size: 1.3rem;
+  }
+  .fullpage-container .faq-container .faq-content .faq-right-aside {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .fullpage-container .faq-container .faq-content .faq-right-aside .accordion-container .accordion-content .accordion-title {
+    padding: 15px 8px;
+  }
+  .fullpage-container .faq-container .faq-content .faq-right-aside .accordion-container .accordion-content .accordion-body p {
+    text-align: center;
+  }
+  .fullpage-container .reviews-container .reviews-content .reviews-right-aside {
+    width: 100%;
+  }
+  .fullpage-container .reviews-container .reviews-content .reviews-right-aside .slider-container {
+    padding: 50px 0 70px;
+  }
+  .fullpage-container .reviews-container .reviews-content .reviews-right-aside .slider-container .slider-content .slider-text {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .fullpage-container .footer-container .footer-content .footer-form form .form-bottom {
+    display: block;
+    text-align: left;
+  }
+  .fullpage-container .footer-container .footer-content .footer-form form .form-bottom button {
+    padding: 10px 20px;
+    margin-top: 6px;
+  }
+}

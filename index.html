@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick-reset.css">
+    <link rel="stylesheet" href="css/lightcase-reset.css">
+    <link rel="stylesheet" href="css/slick-reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/fullpage-reset.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Uber landing page</title>
+</head>
+<body>
+
+    <div class="modal-container">
+        <div class="modal-overlay" data-modal="close"></div>
+        <div class="modal-content modal-callback" id="modal1">
+            <div class="callback-title">
+                <h4>Хотите, мы вам перезвоним?</h4>
+                <span class="far fa-times-circle" data-modal="close"></span>
+            </div>
+            <div class="callback-text">
+                <p>Введите ваш номер и мы свяжемся с вами за 30 секунд!</p>
+                <input type="tel" name="tel">
+            </div>
+            <div class="callback-footer">
+                <button class="modal-close-btn">Жду звонка!</button>
+                <button class="modal-close-btn" data-modal="close">Закрыть</button>
+                <p>Нажимая на кнопку, вы даете согласие на <span>обработку персональных данных</span></p>
+            </div>
+        </div>
+        <div class="modal-content modal-callback" id="modal2">
+            <div class="callback-title">
+                <h4>Хотите, мы вам перезвоним?</h4>
+                <span class="far fa-times-circle" data-modal="close"></span>
+            </div>
+            <div class="callback-text">
+                <p>Введите ваш номер и мы свяжемся с вами за 30 секунд!</p>
+                <input type="tel" name="callback">
+            </div>
+            <div class="callback-footer">
+                <button class="modal-close-btn">Жду звонка!</button>
+                <button class="modal-close-btn" data-modal="close">Закрыть</button>
+                <p>Нажимая на кнопку, вы даете согласие на <span>обработку персональных данных</span></p>
+            </div>
+        </div>
+        <div class="modal-content modal-review" id="modal3">
+            <div class="review-title">
+                <h4>Оставить отзыв</h4>
+                <span class="far fa-times-circle" data-modal="close"></span>
+            </div>
+            <div class="form-review-text">
+                <form action="mailto:oksana.developer@gmail.com">
+                    <div class="row-2">
+                        <div class="col xs-2 sm-2 md-1 lg-1">
+                            <div class="form-review-name">
+                                <label for="review-name">Имя</label>
+                                <input type="text" name="review-name" id="review-name">
+                            </div>
+                        </div>
+                        <div class="col xs-2 sm-2 md-1 lg-1">
+                            <div class="form-review-email">
+                                <label for="review-email">Email</label>
+                                <input type="email" name="review-email" id="review-email">
+                            </div>
+                        </div>
+                        <div class="form-review-text">
+                            <p>Ваш отзыв</p>
+                            <textarea name="review-text" id="form-review-text" cols="30" rows="5"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="review-footer">
+                <button class="modal-close-btn">Оставить отзыв</button>
+                <button class="modal-close-btn" data-modal="close">Закрыть</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <div class="overlay" data-mobile="close"></div>
+        <div class="mobile-nav">
+            <div class="mobile-logo" style="background-image: url(img/bonus-bg.jpg)">
+                <span class="fab fa-uber"></span>
+            </div>
+            <ul class="mobile-menu">
+                <li><span class="nav-icons fas fa-home"></span><a href="#section-1">Главная</a></li>
+                <li><span class="nav-icons fas fa-file"></span><a href="#section-2">История</a></li>
+                <li><span class="nav-icons fas fa-table"></span><a href="#section-3">Для водителей</a></li>
+                <li><span class="nav-icons fas fa-percent"></span><a href="#section-4">Бонусы и Скидки</a></li>
+                <li><span class="nav-icons fas fa-taxi"></span><a href="#section-5">Автопарк</a></li>
+                <li><span class="nav-icons fas fa-question-circle"></span><a href="#section-6">FAQ</a></li>
+                <li><span class="nav-icons fas fa-pencil-alt"></span><a href="#section-7">Отзывы</a></li>
+                <li><span class="nav-icons fas fa-envelope"></span><a href="#section-8">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="open-menu">
+        <div class="open-ham">
+            <a class="mobile" data-mobile="open-ham"><span class="fas fa-bars"></span></a>
+        </div>
+    </div>
+
+    <div class="fixed-menu">
+        <ul class="menu">
+            <li data-section-anchor="section1"><span>Главная</span></li>
+            <li data-section-anchor="section2"><span>История</span></li>
+            <li data-section-anchor="section3"><span>Для водителей</span></li>
+            <li data-section-anchor="section4"><span>Бонусы и Скидки</span></li>
+            <li data-section-anchor="section5"><span>Автопарк</span></li>
+            <li data-section-anchor="section6"><span>FAQ</span></li>
+            <li data-section-anchor="section7"><span>Отзывы</span></li>
+            <li data-section-anchor="section8"><span>Контакты</span></li>
+        </ul>
+    </div>
+
+    <div class="fullpage-container">
+        <div class="section header" data-anchor="section1" id="section-1" data-index="1">
+            <div class="bg" style="background-image: url(img/header-bg.jpg)"></div>
+            <div class="flex-wrap">
+                <div class="header-content">
+                    <div class="header-text">
+                        <p>Осуществляем подключение и поддержку водителей FREE NOW</p>
+                    </div>
+                    <div class="header-cities">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span>Киев</span>
+                        <span>Одесса</span>
+                        <span>Харьков</span>
+                        <span>Львов</span>
+                        <span>Днепр</span>
+                    </div>
+                    <div class="header-button">
+                        <button data-modal="#modal1">Подключиться</button>
+                    </div>
+                </div>
+                <div class="footer-fixed">
+                    <div class="language">
+                        <div class="ru">
+                            <span>Русский</span>
+                        </div>
+                        <div class="ua">
+                            <span>Українська</span>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <span class="fab fa-facebook-f"></span>
+                        <span class="fab fa-vk"></span>
+                        <span class="fab fa-viber"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" data-anchor="section2" id="section-2" data-index="2">
+            <div class="bg" style="background-image: url(img/history-bg.jpg)"></div>
+            <div class="flex-wrap">
+                <div class="history-container">
+                    <div class="history-content">
+                        <div class="history-image">
+                            <div class="history-logo">
+                                <span class="fab fa-uber"></span>
+                                <p>FREE NOW</p>
+                            </div>
+                        </div>
+                        <div class="download">
+                            <p>FREE NOW — это приложение, которое помогает водителям и пассажирам найти друг друга за несколько минут. </p>
+                            <div class="download-buttons">
+                                <button>Скачать на iOS</button>
+                                <button>Скачать на Android</button>
+                            </div>
+                        </div>
+                        <div class="history-text">
+                            <p>FREE NOW - это в большей части мобильное приложение, которое соединяет пассажира с находящимися рядом водителями-партнерами. Для использования сервиса пассажиру достаточно просто скачать приложение себе на телефон и вызвать автомобиль.</p>
+                            <p>Координаты как пассажира, так и партнера определяются автоматически и указываются на карте. Дальше постает выбор автомобиля, точнее класса автомобиля: FREE NOW или FREE NOW SELECT. </p>
+                            <p>Всю стоимость поездки рассчитывает приложение автоматически и клиент сразу знает, сколько это будет ему стоить. Деньги спишутся автоматически с карты клиента, после его доставки.</p>
+                        </div>
+                    </div>
+                    <div class="footer-fixed">
+                        <div class="language">
+                            <div class="ru">
+                                <span>Русский</span>
+                            </div>
+                            <div class="ua">
+                                <span>Українська</span>
+                            </div>
+                        </div>
+                        <div class="social-icons">
+                            <span class="fab fa-facebook-f"></span>
+                            <span class="fab fa-vk"></span>
+                            <span class="fab fa-viber"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section white dark-icon" style="background-color: #ddd" data-anchor="section3" id="section-3" data-index="3" data-white="white">
+            <div class="bg"></div>
+            <div class="flex-wrap">
+                <div class="conditions-container">
+                    <div class="conditions-content">
+                        <div class="conditions-content-left">
+                            <h2>Условия сотрудничества</h2>
+                            <ul>
+                                <li>12% с наличных и безналичных заказов.</li>
+                                <li>2.5% комиссия платежной системы за перевод средств на карту; снимается из суммы перевода.</li>
+                                <li>10 грн в неделю, если за период с понедельника по воскресенье принято хотя бы один заказ.</li>
+                                <li>Счет можно пополнять в терминалах или безналичными заказами. Средства на счете всегда доступны для снятия.</li>
+                                <li><span>Максимальный</span> отрицательный баланс равен -20 гривнам, после - программа будет заблокирована.</li>
+                            </ul>
+                        </div>
+                        <div class="conditions-content-right">
+                            <h2>Условия сотрудничества</h2>
+                            <ul>
+                                <li>Терминалы пополнения: Privat24, Monobank, Privat, City24, IBOX, EasyPay.</li>
+                                <li>Если вы хотите присоединиться к бонусной программе и забрендировать автомобиль, рекомендуем обратиться в офис</li>
+                                <li>Заказ с фиксированным тарифом - уже известны стоимость, километраж и адреса. Заказ «по городу» - пересчитываются по таксометром или через поддержку.</li>
+                                <li>Сервис компенсирует пустую подачу авто 1 раз в сутки, если вы вовремя подали автомобиль по адресу, но клиенты не выходят и не отвечают на телефонные звонки. Размер компенсации составляет 30 грн.</li>
+                                <li>Сделать запрос на компенсацию можно в течение 30 минут с момента подачи автомобиля.</li>
+                            </ul>
+                            <p class="conditions-bottom">По всем вопросам обращайтесь в службу поддержки: +380 93 188 17 12</p>
+                        </div>
+                    </div>
+                    <div class="footer-fixed black">
+                        <div class="language">
+                            <div class="ru">
+                                <span>Русский</span>
+                            </div>
+                            <div class="ua">
+                                <span>Українська</span>
+                            </div>
+                        </div>
+                        <div class="social-icons">
+                            <span class="fab fa-facebook-f"></span>
+                            <span class="fab fa-vk"></span>
+                            <span class="fab fa-viber"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" data-anchor="section4" id="section-4" data-index="4">
+            <div class="bg" style="background-image: url(img/bonus-bg.jpg)"></div>
+            <div class="flex-wrap">
+                <div class="bonus-container">
+                    <div class="bonus-content">
+                        <div class="row-3">
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="bonus-card">
+                                    <span class="far fa-star"></span>
+                                    <p>Рейтинг от пассажиров от 0 до 5. Влияет на бонусы, регулярность повторного осмотра и сотрудничество в целом.</p>
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="bonus-card">
+                                    <span class="fas fa-mobile-alt"></span>
+                                    <p>Замена данных по автомобилю происходит дистанционно или в офисе компании.</p>    
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="bonus-card">
+                                <span class="far fa-credit-card"></span>
+                                <p>12% с наличных и безналичных заказов. Значительной частью заработка являются также бонусы!</p> 
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="bonus-card">
+                                    <span class="fas fa-chart-line"></span>
+                                    <p>Все иcчисления производятся автоматически в приложении. Все заработанные деньги вы также сможете отследить через приложение.</p>
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="bonus-card">
+                                    <span class="far fa-check-circle"></span>
+                                    <p>FREE NOW стремится обеспечить безопасность поездок. Наша технология гарантирует безопасность пассажиров до, во время и после каждой поездки.</p>
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="bonus-card">
+                                <span class="far fa-thumbs-up"></span>
+                                <p>Вы имеете полный доступ к информации по своим доходам и совершенным поездкам в личном кабинете.</p> 
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="bonus-card">
+                                <span class="fas fa-piggy-bank"></span>
+                                <p>Вы можете зарабатывать за рулем столько, сколько хотите. Чем больше поездок вы совершаете, тем больше зарабатываете. Оплата перечисляется на ваш счет автоматически еженедельно.</p> 
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="bonus-card">
+                                <span class="far fa-clock"></span>
+                                <p>Работайте, когда пожелаете. Нет ни офиса, ни руководителя. Это значит, что вы начинаете и заканчиваете работу, когда вам удобно, потому что с FREE NOW вы сами себе начальник.</p> 
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="bonus-card">
+                                    <span class="fas fa-percent"></span>
+                                    <p>При необходимости Вы можете дать запрос на выплату средств быстрее. Процедура обсуждается индивидуально с нашим менеджером.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="footer-fixed">
+                        <div class="language">
+                            <div class="ru">
+                                <span>Русский</span>
+                            </div>
+                            <div class="ua">
+                                <span>Українська</span>
+                            </div>
+                        </div>
+                        <div class="social-icons">
+                            <span class="fab fa-facebook-f"></span>
+                            <span class="fab fa-vk"></span>
+                            <span class="fab fa-viber"></span>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </div>
+
+        <div class="section" data-anchor="section5" id="section-5" data-index="5">
+            <div class="bg" style="background-image: url(img/autos-bg.jpg)"></div>
+            <div class="flex-wrap">
+                <div class="autos-container">
+                    <div class="autos-title">
+                        <h3>Наш автопарк - это современные и надежные автомобили</h3>
+                        <p>Наш автопарк состоит из современных транспортных средств, оснащенных всем необходимым для комфортных и безопасных поездок.</p>
+                        <p>Ниже приведены фотографии некоторых автомобилей из нашего автопарка.</p>
+                    </div>
+                    <div class="autos-gallery">
+                        <div class="row-3">
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="auto-card">
+                                <a href="img/audiA4.jpg" data-rel="lightcase:myCollection" title="Audi A6">
+                                        <img src="img/audiA4.jpg" alt=""> 
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="auto-card">
+                                    <a href="img/bmw5.jpg" data-rel="lightcase:myCollection" title="BMW 5 series">
+                                        <img src="img/bmw5.jpg" alt=""> 
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="auto-card">
+                                    <a href="img/chevrolet.jpg" data-rel="lightcase:myCollection" title="Chevrolet Spark EV">
+                                        <img src="img/chevrolet.jpg" alt=""> 
+                                    </a> 
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="auto-card">
+                                    <a href="img/citroen.jpg" data-rel="lightcase:myCollection" title="Citroen C Elysee">
+                                        <img src="img/citroen.jpg" alt=""> 
+                                    </a> 
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="auto-card">
+                                    <a href="img/dacia.jpg" data-rel="lightcase:myCollection" title="Dacia Duster">
+                                        <img src="img/dacia.jpg" alt=""> 
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="auto-card">
+                                    <a href="img/ford.jpg" data-rel="lightcase:myCollection" title="Ford Focus">
+                                        <img src="img/ford.jpg" alt=""> 
+                                    </a> 
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="auto-card">
+                                    <a href="img/honda.jpg" data-rel="lightcase:myCollection" title="Honda CRV">
+                                        <img src="img/honda.jpg" alt=""> 
+                                    </a> 
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="auto-card">
+                                    <a href="img/hyundai.jpg" data-rel="lightcase:myCollection" title="Hyundai Elantra">
+                                        <img src="img/hyundai.jpg" alt=""> 
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col xs-3 sm-2 md-1 lg-1">
+                                <div class="auto-card">
+                                    <a href="img/infinity.jpg" data-rel="lightcase:myCollection" title="Infinity QX30">
+                                        <img src="img/infinity.jpg" alt=""> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-fixed">
+                        <div class="language">
+                            <div class="ru">
+                                <span>Русский</span>
+                            </div>
+                            <div class="ua">
+                                <span>Українська</span>
+                            </div>
+                        </div>
+                        <div class="social-icons">
+                            <span class="fab fa-facebook-f"></span>
+                            <span class="fab fa-vk"></span>
+                            <span class="fab fa-viber"></span>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+        </div>
+
+        <div class="section white" style="background-color: #ddd" data-anchor="section6" id="section-6" data-index="6">
+            <div class="bg"></div>
+            <div class="flex-wrap">
+                <div class="faq-container">
+                    <div class="faq-content">
+                        <div class="faq-left-aside">
+                            <h3>Часто Задаваемые Вопросы</h3>
+                            <span class="far fa-question-circle"></span>
+                            <button data-modal="#modal2">Задать вопрос</button>
+                        </div>
+                        <div class="faq-right-aside">
+                            <div class="accordion-container">
+                                <div class="accordion-content">
+                                    <button data-accordion="#content1" class="accordion-title active">Какое устройство подходит для работы в приложении?</button>
+                                    <div class="accordion-body active" id="#content1">
+                                        <p>Любой мобильный телефон или планшет на базе операционной системы Android (4.0 и выше). Также можно использовать iPhone или iPad.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <button data-accordion="#content2" class="accordion-title">Могу ли я использовать FREE NOW для подработки?</button>
+                                    <div class="accordion-body" id="#content2">
+                                        <p>Да, у водителя абсолютно свободный график работы: он может работать даже когда едет утром на работу или вечером, когда возвращается с работы, но наибольший заработок водитель получит с помощью бонусов (нужно совершать более 20 поездок в неделю).</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <button data-accordion="#content3" class="accordion-title">Зависит мой заработок от времени дня?</button>
+                                    <div class="accordion-body" id="#content3">
+                                        <p>Да, в течение всего дня продолжаются разные гарантированы множители к каждой поездки, совершенной с отмеченных на карте зон.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <button data-accordion="#content4" class="accordion-title">Как быть, если пассажир не выходит?</button>
+                                    <div class="accordion-body" id="#content4">
+                                        <p>жидайте 5 минут бесплатного времени, если пассажир не отвечает, телефон выключен и не выходит - отменяйте поездку с пометкой «пассажир не явился». С пассажира будет списан штраф.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-content">
+                                    <button data-accordion="#content5" class="accordion-title">Я хочу стать водителем FREE NOW. Что делать?</button>
+                                    <div class="accordion-body" id="#content5">
+                                        <p>Все очень просто, заполните анкету водителя на нашем сайте и скачайте приложение FREE NOW в зависимости от вашей операционной системы, после чего мы свяжемся с вами. Вам не придется никуда ехать, всю процедуру дальнейшей регистрации мы проводим в онлайн-режиме.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-fixed black">
+                        <div class="language">
+                            <div class="ru">
+                                <span>Русский</span>
+                            </div>
+                            <div class="ua">
+                                <span>Українська</span>
+                            </div>
+                        </div>
+                        <div class="social-icons">
+                            <span class="fab fa-facebook-f"></span>
+                            <span class="fab fa-vk"></span>
+                            <span class="fab fa-viber"></span>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </div>
+
+        <div class="section" data-anchor="section7" id="section-7" data-index="7">
+            <div class="bg" style="background-image: url(img/reviews.jpg)"></div>
+            <div class="flex-wrap">
+                <div class="reviews-container">
+                    <div class="reviews-content">
+                        <div class="reviews-left-aside">
+                            <h3>Отзывы клиентов о FREE NOW </h3>
+                            <button data-modal="#modal3">Написать отзыв</button>
+                        </div>
+                        <div class="reviews-right-aside">
+                            <div class="slider-container">
+                                <div class="slider-content">
+                                    <div class="stars">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                    <div class="slider-text">
+                                        <p class="review-text">За неделю работал после работы по 3-4 часа в день, и на выходных. Всего за 20 часов получилось 3800 грн. Цифрой абсолютно доволен. Выплаты происходят вовремя! Спасибо!:)</p>
+                                        <p class="review-name">Александр</p>
+                                    </div>
+                                </div>
+                                <div class="slider-content">
+                                    <div class="stars">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                    <div class="slider-text">
+                                        <p class="review-text">Очень доволен службой. Среди всех партнеров только здесь смогли все быстро и четко объяснить.</p>
+                                        <p class="review-name">Максим</p>
+                                    </div>
+                                </div>
+                                <div class="slider-content">
+                                    <div class="stars">
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                        <span class="fas fa-star"></span>
+                                    </div>
+                                    <div class="slider-text">
+                                        <p class="review-text">Ребята делают свою работу на +5. Быстро ответили на заявку, оперативно зарегестрировали. Всегда помогают с решением проблем. Всегда отвечают на звонки.</p>
+                                        <p class="review-name">Сергей</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-fixed">
+                        <div class="language">
+                            <div class="ru">
+                                <span>Русский</span>
+                            </div>
+                            <div class="ua">
+                                <span>Українська</span>
+                            </div>
+                        </div>
+                        <div class="social-icons">
+                            <span class="fab fa-facebook-f"></span>
+                            <span class="fab fa-vk"></span>
+                            <span class="fab fa-viber"></span>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="section" data-anchor="section8" id="section-8" data-index="8">
+            <div class="bg" style="background-image: url(img/footer-bg.jpg)"></div>
+            <div class="flex-wrap">
+                <div class="footer-container">
+                    <div class="footer-content">
+                        <div class="footer-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.9297110381594!2d30.73456366369156!3d46.465085900872104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c63194c32498f1%3A0xbc3436433369302!2zVWJlciBBdXRvINCe0LTQtdGB0YHQsCAtINC70YPRh9GI0LjQuSDQv9Cw0YDRgtC90LXRgCDRg9Cx0LXRgCAoVWJlcikg0LIg0KPQutGA0LDQuNC90LU!5e0!3m2!1sru!2sua!4v1567860146422!5m2!1sru!2sua" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                        <div class="footer-contacts">
+                            <div class="footer-form">
+                                <form action="mailto:oksana.developer@gmail.com">
+                                    <p>Написать нам</p>
+                                    <label for="input-name" class="label-input">
+                                        <span class="fas fa-user"></span>
+                                        <input class="form-input" id="input-name" type="text" name="name" placeholder="Имя и фамилия">
+                                    </label>
+                                    <label for="input-email" class="label-input">
+                                        <span class="fas fa-envelope"></span>
+                                        <input id="input-email" class="form-input" type="email" name="email" placeholder="Email">
+                                    </label>
+                                    <label for="input-text" class="label-input">
+                                        <span class="fas fa-align-justify"></span>
+                                        <textarea id="input-text" class="form-input" name="text" cols="30" rows="3" placeholder="Текст сообщения"></textarea>
+                                    </label>
+                                    <div class="form-bottom">
+                                        <label class="file-upload" for="file-upload">Прикрепить файл
+                                            <input type="file" name="file-upload" id="file-upload">
+                                            <span class="fas fa-cloud-upload-alt"></span>
+                                        </label>
+                                        <button type="submit">Отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-fixed">
+                        <div class="language">
+                            <div class="ru">
+                                <span>Русский</span>
+                            </div>
+                            <div class="ua">
+                                <span>Українська</span>
+                            </div>
+                        </div>
+                        <div class="social-icons">
+                            <span class="fab fa-facebook-f"></span>
+                            <span class="fab fa-vk"></span>
+                            <span class="fab fa-viber"></span>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/scrolloverflow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/jquery.easings.min.js"></script>
+<script src="js/jquery.events.touch.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/lightcase.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/modalPlugin.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
