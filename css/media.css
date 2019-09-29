@@ -291,6 +291,9 @@
   .fullpage-container .bonus-container .bonus-content .bonus-card {
     padding: 10px;
   }
+  .fullpage-container .autos-container {
+    text-align: center;
+  }
   .fullpage-container .autos-container .autos-gallery .auto-card img {
     width: 260px;
     height: 180px;
