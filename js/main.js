@@ -1,7 +1,7 @@
-var width = $(window).width();
+let width = $(window).width();
 
 if (width > 600) {
-    var fpApi = $.fn.fullpage;
+    let fpApi = $.fn.fullpage;
 
     $('.fullpage-container').fullpage({
 
@@ -17,10 +17,10 @@ if (width > 600) {
 
         onLeave: function(prevIndex, currentIndex, direction) {
 
-            var $menu = $('.fixed-menu');
-            var $fpNav = $('#fp-nav > ul > li > a > span');
-            var $currentSection = $('[data-index="' + currentIndex + '"]');
-            var $fpNavText = $('#fp-nav > ul > li > .fp-tooltip');
+            let $menu = $('.fixed-menu');
+            let $fpNav = $('#fp-nav > ul > li > a > span');
+            let $currentSection = $('[data-index="' + currentIndex + '"]');
+            let $fpNavText = $('#fp-nav > ul > li > .fp-tooltip');
 
             if ($currentSection.hasClass('white')) {
                 $menu.addClass('dark');
@@ -32,30 +32,36 @@ if (width > 600) {
                 $fpNavText.css('color', '#fff');
             }
 
-            var $mobileMenu = $('.open-menu');
+            let $mobileMenu = $('.open-menu');
             ($currentSection.hasClass('white')) ? $mobileMenu.addClass('dark') : $mobileMenu.removeClass('dark');
         }
     });
   
     $('[data-section-anchor]').click(function () {
-        var target = $(this).attr('data-section-anchor');
+        let target = $(this).attr('data-section-anchor');
         fpApi.moveTo(target);
     });
 }
 
 // Mobile menu
 
-$('[data-mobile]').click(function () {
-    var selector = $(this).attr('data-mobile');
+let dataMobile = document.querySelectorAll('[data-mobile]');
+let overlay = document.querySelector('.overlay');
 
-    if (selector === 'close') {
-        $('.overlay').removeClass('active');
-        $('.mobile-nav').removeClass('active');
-    } else {
-        $('.overlay').addClass('active');
-        $('.mobile-nav').addClass('active');
-    }
-});
+dataMobile.forEach(function (element) {
+	element.addEventListener('click', function() {
+        
+        let selector = this.getAttribute('data-mobile');
+        
+		if (selector === 'close') {
+            overlay.classList.remove('active');
+            document.querySelector('.mobile-nav').classList.remove('active');
+		} else {
+			overlay.classList.add('active');
+			document.querySelector('.mobile-nav').classList.add('active');
+		}
+	});
+}); 
 
 // Accordion 
   
@@ -83,29 +89,29 @@ $('.slider-container').slick({
     arrows: true,
 
     responsive: [
-    {
-        breakpoint: 1200,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
         }
-    },
-    {
-        breakpoint: 900,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-        }
-    },
-    {
-        breakpoint: 600,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-        }
-    }
     ]
 });
 
@@ -115,4 +121,6 @@ $('.modal-container').modalPlugin({
     animationSpeed: 700,
     dataAttr: 'data-modal'
 });
+
+
 
