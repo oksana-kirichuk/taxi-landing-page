@@ -1,11 +1,25 @@
 // out: ../css/style.css
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: "Tahoma";
 }
-h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+a,
+span,
+div,
+input {
     margin: 0;
     padding: 0;
     border: none;
@@ -35,7 +49,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
     &.dark {
         .open-ham {
             .mobile {
-                > span {
+                >span {
                     color: #000;
                 }
             }
@@ -47,12 +61,13 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
         top: 20px;
         right: 20px;
         z-index: 9999;
-        
+
         .mobile {
             display: none;
 
-            > span {
-                color: #03e9af;;
+            >span {
+                color: #03e9af;
+                ;
                 font-size: 1.8rem;
             }
         }
@@ -99,166 +114,58 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
         transition: all 0.3s ease;
         text-align: center;
 
-            &.active {
-                opacity: 1;
-                visibility: visible;
-            }
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
 
-            &.modal-callback {
-                .callback-title {
-                    padding: 25px 30px;
-                    background-color: #2bc7a0;
-                    position: relative;
+        &.modal-callback {
+            .callback-title {
+                padding: 25px 30px;
+                background-color: #2bc7a0;
+                position: relative;
 
-                    h4 {
-                        color: #fff;
-                        font-size: 2rem;
-                    }
-
-                    span {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        padding: 5px;
-                        z-index: 100;
-                        color: #fff;
-                        font-size: 1.5rem;
-                        cursor: pointer;
-                    }
+                h4 {
+                    color: #fff;
+                    font-size: 2rem;
                 }
 
-                .callback-text {
+                span {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 5px;
+                    z-index: 100;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+            }
+
+            .callback-text {
+                font-size: 1.5rem;
+                padding: 30px;
+
+                p {
                     font-size: 1.5rem;
                     padding: 30px;
-
-                    p {
-                        font-size: 1.5rem;
-                        padding: 30px;
-                    }
-
-                    input {
-                        border: 1px solid #ddd;
-                        padding: 10px;
-                        width: 300px;
-                        border-radius: 3px;
-                    }
-
-                    input::-webkit-outer-spin-button,
-                    input::-webkit-inner-spin-button {
-                        -webkit-appearance: none;
-                    }
                 }
 
-                .callback-footer {
-                    button {
-                        color: #fff;
-                        font-weight: bold;
-                        background-color: #2bc7a0;
-                        border: none;
-                        outline: none;
-                        padding: 10px 25px;
-                        border-radius: 20px;
-                        cursor: pointer;
-                        transition: all 0.5s ease;
-                        font-size: 1.2rem;
+                input {
+                    border: 1px solid #ddd;
+                    padding: 10px;
+                    width: 300px;
+                    border-radius: 3px;
+                }
 
-                        &:first-child {
-                            margin-right: 5px;
-                        }
-            
-                        &:hover {
-                            box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);                            
-                            border: none;
-                        }
-                    }
-
-                    p {
-                        padding: 20px 40px;
-
-                        span {
-                            color: #2bc7a0;
-                        }
-                    }
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
                 }
             }
 
-            &.modal-review {
-                top: 70px;
-
-                .review-title {
-                    padding: 25px 30px;
-                    background-color: #2bc7a0;
-                    position: relative;
-
-                    h4 {
-                        color: #fff;
-                        font-size: 2rem;
-                    }
-
-                    span {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        padding: 5px;
-                        z-index: 100;
-                        color: #fff;
-                        font-size: 1.5rem;
-                        cursor: pointer;
-                    }
-                }
-
-                .form-review-text {
-                    form {
-                        .form-review-name {
-                            padding: 10px 0;
-
-                            label {
-                                display: block;
-                                margin-bottom: 10px;
-                            }
-
-                            input {
-                                border: 1px solid #ddd;
-                                padding: 10px;
-                                width: 200px;
-                                border-radius: 3px;
-                            }
-                        }
-
-                        .form-review-email {
-                            padding: 10px 0;
-
-                            label {
-                                display: block;
-                                margin-bottom: 10px;
-                            }
-
-                            input {
-                                border: 1px solid #ddd;
-                                padding: 10px;
-                                width: 200px;
-                                border-radius: 3px;
-                            }
-                        }
-
-                        .form-review-text {
-                            width: 100%;
-
-                            p {
-                                margin-bottom: 10px;
-                            }
-
-                            textarea {
-                                width: 80%;
-                            }
-                        }
-                    }
-                }
-
-                .review-footer {
-                    padding: 30px 0;
-
-                   button {
+            .callback-footer {
+                button {
                     color: #fff;
                     font-weight: bold;
                     background-color: #2bc7a0;
@@ -270,17 +177,125 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                     transition: all 0.5s ease;
                     font-size: 1.2rem;
 
-                        &:first-child {
-                            margin-right: 5px;
+                    &:first-child {
+                        margin-right: 5px;
+                    }
+
+                    &:hover {
+                        box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);
+                        border: none;
+                    }
+                }
+
+                p {
+                    padding: 20px 40px;
+
+                    span {
+                        color: #2bc7a0;
+                    }
+                }
+            }
+        }
+
+        &.modal-review {
+            top: 70px;
+
+            .review-title {
+                padding: 25px 30px;
+                background-color: #2bc7a0;
+                position: relative;
+
+                h4 {
+                    color: #fff;
+                    font-size: 2rem;
+                }
+
+                span {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 5px;
+                    z-index: 100;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+            }
+
+            .form-review-text {
+                form {
+                    .form-review-name {
+                        padding: 10px 0;
+
+                        label {
+                            display: block;
+                            margin-bottom: 10px;
                         }
-                        
-                        &:hover {
-                            box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);                            
-                            border: none;
+
+                        input {
+                            border: 1px solid #ddd;
+                            padding: 10px;
+                            width: 200px;
+                            border-radius: 3px;
+                        }
+                    }
+
+                    .form-review-email {
+                        padding: 10px 0;
+
+                        label {
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+
+                        input {
+                            border: 1px solid #ddd;
+                            padding: 10px;
+                            width: 200px;
+                            border-radius: 3px;
+                        }
+                    }
+
+                    .form-review-text {
+                        width: 100%;
+
+                        p {
+                            margin-bottom: 10px;
+                        }
+
+                        textarea {
+                            width: 80%;
                         }
                     }
                 }
             }
+
+            .review-footer {
+                padding: 30px 0;
+
+                button {
+                    color: #fff;
+                    font-weight: bold;
+                    background-color: #2bc7a0;
+                    border: none;
+                    outline: none;
+                    padding: 10px 25px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    transition: all 0.5s ease;
+                    font-size: 1.2rem;
+
+                    &:first-child {
+                        margin-right: 5px;
+                    }
+
+                    &:hover {
+                        box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);
+                        border: none;
+                    }
+                }
+            }
+        }
 
         .modal-title {
             h4 {
@@ -312,7 +327,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                 border-radius: 3px;
                 transition: all 0.5s ease;
                 background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-                box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);                            
+                box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
                 border: none;
             }
         }
@@ -379,7 +394,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
         &.active {
             transform: translateX(0);
         }
-        
+
         .mobile-logo {
             text-align: center;
             margin-bottom: 30px;
@@ -391,7 +406,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
             }
         }
 
-        > .mobile-menu {
+        >.mobile-menu {
             li {
                 border-bottom: 1px solid #eee;
                 margin-bottom: 20px;
@@ -426,14 +441,15 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
     transition: all 0.3 ease;
 
     &.dark {
-        background: linear-gradient(90deg, rgba(26,26,37,1) 20%, rgba(7,5,19,1) 39%, rgba(3,19,23,1) 57%);
+        background: linear-gradient(90deg, rgba(26, 26, 37, 1) 20%, rgba(7, 5, 19, 1) 39%, rgba(3, 19, 23, 1) 57%);
 
         .menu {
-            > li {
+            >li {
                 font-weight: 500;
                 display: inline-block;
 
-                > a, > span {
+                >a,
+                >span {
                     color: #fff;
                     transition: color 0.3 ease;
 
@@ -455,15 +471,16 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
 
     .menu {
         text-align: center;
-        
-        > li {
+
+        >li {
             display: inline-block;
 
             &.mobile {
                 display: none;
             }
-            
-            > a, > span {
+
+            >a,
+            >span {
                 padding: 15px;
                 display: block;
                 cursor: pointer;
@@ -486,8 +503,9 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
     &.black {
         .nav-link {
             z-index: 500;
-            
-            a, span {
+
+            a,
+            span {
                 color: #000;
                 cursor: pointer;
             }
@@ -501,13 +519,14 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                     color: #000;
                 }
             }
-            
+
             .ua {
                 span {
                     color: #000;
                 }
             }
         }
+
         .social-icons {
             z-index: 500;
 
@@ -527,7 +546,8 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
     .nav-link {
         z-index: 400;
 
-        a, span {
+        a,
+        span {
             color: #fff;
             opacity: 0.9;
             padding: 0 10px;
@@ -545,7 +565,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                 padding: 0 10px;
             }
         }
-        
+
         .ua {
             float: right;
 
@@ -556,6 +576,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
             }
         }
     }
+
     .social-icons {
         span {
             color: #fff;
@@ -581,11 +602,11 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
 
             .content {
                 .title {
-                   color: #000; 
+                    color: #000;
                 }
 
                 .text {
-                   color: #000;     
+                    color: #000;
                 }
             }
         }
@@ -614,7 +635,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
 
         .header-content {
             padding: 100px 0;
-            
+
             .header-text {
                 width: 50%;
                 margin-bottom: 50px;
@@ -642,7 +663,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
 
                 &:hover {
                     color: rgb(19, 247, 197);
-                    
+
                     &:first-child {
                         color: #fff;
                         cursor: default;
@@ -667,7 +688,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
 
                 &:hover {
                     background-image: linear-gradient(to right, #18b681, #08dfb0, #06b49d, #00ccaa);
-                    box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);                            
+                    box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);
                     border: none;
                 }
             }
@@ -713,6 +734,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                     margin-bottom: 20px;
                     text-align: center;
                 }
+
                 .download-buttons {
                     text-align: center;
 
@@ -728,7 +750,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
 
                         &:hover {
                             background-image: linear-gradient(to right, #18b681, #08dfb0, #06b49d, #00ccaa);
-                            box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);                            
+                            box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);
                             border: none;
                             color: #fff;
                         }
@@ -817,7 +839,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                     z-index: 10;
                     width: 50%;
                     color: rgb(1, 160, 126);
-                    background-color:  rgb(189, 236, 226);
+                    background-color: rgb(189, 236, 226);
                     padding: 6px;
                 }
             }
@@ -910,7 +932,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
 
                         &:hover {
                             background-image: linear-gradient(to right, #18b681, #08dfb0, #06b49d, #00ccaa);
-                            box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);                            
+                            box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);
                             border: none;
                             color: #fff;
                         }
@@ -930,7 +952,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
             padding: 50px 0;
 
             .faq-left-aside {
-                background: linear-gradient( rgba(37, 37, 37, 0.9), rgba(0, 0, 0, 0.9) ), url(../img/faq-bg.jpg);
+                background: linear-gradient(rgba(37, 37, 37, 0.9), rgba(0, 0, 0, 0.9)), url(../img/faq-bg.jpg);
                 .bg-set;
                 min-height: 500px;
                 display: flex;
@@ -966,7 +988,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
 
                     &:hover {
                         background-image: linear-gradient(to right, #18b681, #08dfb0, #06b49d, #00ccaa);
-                        box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);                            
+                        box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);
                         border: none;
                     }
                 }
@@ -982,8 +1004,8 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                         .accordion-title {
                             display: inline-block;
                             padding: 15px 0 15px 15px;
-                            border: 1px solid rgb(167, 167, 167);    
-                            background: linear-gradient(90deg, rgba(26,26,37,1) 20%, rgba(7,5,19,1) 39%, rgba(3,19,23,1) 57%);
+                            border: 1px solid rgb(167, 167, 167);
+                            background: linear-gradient(90deg, rgba(26, 26, 37, 1) 20%, rgba(7, 5, 19, 1) 39%, rgba(3, 19, 23, 1) 57%);
                             width: 100%;
                             outline: none;
                             border-bottom: none;
@@ -1055,7 +1077,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
 
                     &:hover {
                         background-image: linear-gradient(to right, #18b681, #08dfb0, #06b49d, #00ccaa);
-                        box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);                            
+                        box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);
                         border: none;
                     }
                 }
@@ -1096,7 +1118,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                             .review-text {
                                 color: #fff;
                                 opacity: 0.8;
-                            }  
+                            }
 
                             .review-name {
                                 color: #fff;
@@ -1133,13 +1155,13 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
             }
 
             .footer-contacts {
-                width: 50%; 
-                
+                width: 50%;
+
                 .contacts {
                     p {
                         color: #fff;
                         padding: 15px 0;
-                        
+
                         span {
                             color: #fff;
                             padding-right: 20px;
@@ -1165,7 +1187,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                         display: flex;
                         align-items: center;
                         position: relative;
-                        
+
                         span {
                             position: absolute;
                             left: 10px;
@@ -1174,10 +1196,10 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                         }
 
                         .form-input {
-                            color: #fff; 
+                            color: #fff;
                             background: transparent;
                             border: none;
-                            border-bottom: 1px solid #fff; 
+                            border-bottom: 1px solid #fff;
                             outline: none;
                             padding: 10px;
                             width: 100%;
@@ -1189,7 +1211,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                                 opacity: 0.8;
                                 font-family: "Tahoma";
                                 font-size: 0.8rem;
-                            } 
+                            }
                         }
                     }
 
@@ -1213,7 +1235,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                             margin: 30px 0 30px;
                             color: #fff;
                         }
-    
+
                         button {
                             background: linear-gradient(to right, #18b681, #08dfb0, #06b49d, #00ccaa);
                             color: #fff;
@@ -1221,15 +1243,15 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                             outline: none;
                             border: none;
                             padding: 15px 45px;
-                            border-radius: 20px;  
+                            border-radius: 20px;
                             font-weight: bold;
                             transition: all 0.5s ease;
                             display: block;
                             margin-top: 20px;
-    
+
                             &:hover {
                                 background-image: linear-gradient(to right, #18b681, #08dfb0, #06b49d, #00ccaa);
-                                box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);                            
+                                box-shadow: 0 4px 15px 0 rgba(8, 219, 173, 0.75);
                                 border: none;
                             }
                         }
@@ -1248,13 +1270,12 @@ h1, h2, h3, h4, h5, h6, ul, li, p, a, span, div, input {
                             padding: 20px;
                             display: none;
                         }
-    
+
                         span {
                             color: #fff;
                             margin-left: 3px;
                         }
                     }
-                    
                 }
             }
         }
